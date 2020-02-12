@@ -11,3 +11,5 @@ $(document).ready(function(){
         $(this).parent().find(".card-header .btn i").html("add");
     });
 });
+
+//enter condition to make sure form is valid before opening modal

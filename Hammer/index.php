@@ -225,6 +225,7 @@ $orderCost = 200;
 $drawersCost = 0;
 $surfaceArea = $length * $width;
 
+
 if (isset($_POST['submit']) and $formIsValid) {
 
     if($wood == 'mahogany') {
@@ -238,18 +239,29 @@ if (isset($_POST['submit']) and $formIsValid) {
     }
 
     $orderCost = $orderCost + ($drawers * 30);
-
 };
+?>
+
+<?php
+if(isset($_POST['submit']) and $formIsValid) {
+    ?>
+<script>
+    $("#myModal").modal('show');
+</script>
+<?php
+}
+?>
+// what happens when the modal window is closed?
+
 
 ?>
 <!--end of desk order summary and calc-->
 
-<body>
 <div id="myModal" class="modal fade">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span>&times;</span></button>
                 <h4 class="modal-title"><span>Thank you for your desk order!</span></h4>
             </div>
             <div class="modal-body">
@@ -265,17 +277,17 @@ if (isset($_POST['submit']) and $formIsValid) {
     </div>
 </div>
 
-
 <!--end of modal window-->
+
 <?php
-if(isset($_POST['submit'])){
-    ?>
-<script>
-    $("#myModal").modal('show');
-    </script>
+//if(isset($_POST['submit'])){
+//    ?>
+<!--<script>-->
+<!--    $("#myModal").modal('show');-->
+<!--    </script>-->
 <?php
-}
-?>
+//}
+//?>
 
 </body>
 </html>

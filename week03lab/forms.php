@@ -37,7 +37,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
     <style>
-        .error {color: red; font-eight: bold;}
+        .error {color: red; font-weight: bold;}
     </style>
 </head>
 <body>
@@ -138,7 +138,7 @@ if (isset($_POST['submit'])) {
         'song' => $song];
 
     $_SESSION['maxIndex'] = sizeof($_SESSION['cart'][]);
-    $_SESSION  // paused here - see instructor's version in canvas
+    // $_SESSION  // paused here - see instructor's version in canvas
 };
 
 

@@ -1,36 +1,11 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Simple Theme</title>
-<link href="css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body>
-<div class="container">
-  <header>
-    <div class="primary_header">
-      <h1 class="title"> SIMPLE</h1>
-    </div>
-    <nav class="secondary_header" id="menu">
-      <ul>
-        <li>HOME</li>
-        <li>ABOUT</li>
-        <li>WORK</li>
-        <li>PORTFOLIO</li>
-        <li>SERVICES</li>
-        <li>CONTACT</li>
-      </ul>
-    </nav>
-  </header>
-  <section>
+<?php
+$pageTitle = "Rick Hammer's Store";
+// run the header.php code as if it were here in this index.php file
+include "includes/header.php";
+
+?>
+
+<section>
     <h2 class="noDisplay">Main Content</h2>
     <article class="left_article">
       <h3>content heading</h3>
@@ -69,15 +44,7 @@
       <h2 class="column_title">RIGHT COLUMN</h2>
     </div>
   </div>
-  <div class="social">
-    <p class="social_icon"><img src="images/bkg_06.jpg" width="100" alt="" class="thumbnail"/></p>
-    <p class="social_icon"><img src="images/bkg_06.jpg" width="100" alt="" class="thumbnail"/></p>
-    <p class="social_icon"><img src="images/bkg_06.jpg" width="100" alt="" class="thumbnail"/></p>
-    <p class="social_icon"><img src="images/bkg_06.jpg" width="100" alt="" class="thumbnail"/></p>
-  </div>
-  <footer class="secondary_header footer">
-    <div class="copyright">&copy;2015 - <strong>SIMPLE Theme</strong></div>
-  </footer>
-</div>
-</body>
-</html>
+
+<?php
+include "includes/footer.php";
+?>
